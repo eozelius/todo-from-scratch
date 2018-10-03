@@ -2,8 +2,7 @@
   Todo Shape
   {
     todos: [
-      {
-        id: 1,
+      <id>: {
         text: 'asdf',
         completed: boolean
       },
@@ -20,7 +19,7 @@ export function createTodo(text){
   }
 }
 
-export const TOGGLE_COMPLETE = 'COMPLETE_TODO'
+export const TOGGLE_COMPLETE = 'TOGGLE_COMPLETE'
 export function completeTodo(id){
   return {
     type: TOGGLE_COMPLETE,
