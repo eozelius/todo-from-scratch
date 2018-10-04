@@ -4,6 +4,7 @@ import rootReducer from './reducers'
 import { createStore} from 'redux'
 import { Provider } from 'react-redux'
 import TodosContainer from './containers/TodosContainer'
+import AddTodo from './containers/AddTodo'
 
 const store = createStore(rootReducer)
 
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
+          <AddTodo />
           <TodosContainer />
         </div>
       </Provider>

@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class TodoList extends Component {
-  render(){    
-    const todos = this.props.todos.map(t => `<li>${t.text.toString()}</li>`)
+  render(){
+    const todos = this.props.todos.map((t, i) => <li key={i}>{t}</li>)
     
     return (
       <div className='todoList'>
@@ -10,6 +11,10 @@ class TodoList extends Component {
       </div>
     )
   }
+}
+
+TodoList.propTypes = {
+  todos: PropTypes.array
 }
 
 export default TodoList
