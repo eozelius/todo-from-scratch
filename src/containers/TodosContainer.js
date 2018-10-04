@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import TodoList from '../presentational/TodoList'
 
 const mapStateToProps = state => {
-  return {todos: state.todos}
+  return state.todos
 }
 
 const mapDispatchToProps = dispatch => {

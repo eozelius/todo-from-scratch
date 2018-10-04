@@ -7,8 +7,6 @@ import TodosContainer from './containers/TodosContainer'
 
 const store = createStore(rootReducer)
 
-console.log(store)
-
 class App extends Component {
   render() {
     return (

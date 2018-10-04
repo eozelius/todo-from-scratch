@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 
 class TodoList extends Component {
-  render(){
-    console.log(this.props.todos)
-    
+  render(){    
     const todos = this.props.todos.map(t => `<li>${t.text.toString()}</li>`)
     
     return (
