@@ -1,12 +1,12 @@
 // import connect from 'react-redux'
 import { CREATE_TODO, TOGGLE_COMPLETE, DELETE_TODO } from './actions'
-import { combineReducers } from 'redux'
+// import { combineReducers } from 'redux'
 
 const defaultTodoState = {
   todos: []
 }
 
-function todoReducer(state = defaultTodoState, action){
+function todos(state = defaultTodoState, action){
   switch(action.type){
     case CREATE_TODO:
       return Object.assign({}, state, {
@@ -25,8 +25,8 @@ function todoReducer(state = defaultTodoState, action){
   }
 }
 
-const rootReducer = combineReducers(
-  todoReducer
-)
+// const rootReducer = combineReducers({
+//   todos
+// })
 
-export default rootReducer
+export default todos
